@@ -153,9 +153,9 @@ def run_gurobi_solver(instance, seed, output_file):
 # Run the computational experiments
 def main():
 
-    workers = 4
+    workers = 3
     output_file = os.path.join('data', 'results.csv')
-    seeds = [1, 3]
+    seeds = [0]
     
     # Load a list of selected instances from MIPLIB2017
     instances = dict()
