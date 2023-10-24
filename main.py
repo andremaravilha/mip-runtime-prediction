@@ -96,8 +96,8 @@ def run_gurobi_solver(instance, seed, output_file):
     try:
 
         # Download the instance
-        #filename = os.path.join('data', 'instances', f'{instance["name"]}.mps.gz')
-        filename = os.path.join('data', 'instances', f'{instance["name"]}.mps')
+        filename = os.path.join('data', 'instances', f'{instance["name"]}.mps.gz')
+        #filename = os.path.join('data', 'instances', f'{instance["name"]}.mps')
         if not os.path.exists(filename):
             urllib.request.urlretrieve(instance['url_download'], filename=filename)
 
