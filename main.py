@@ -184,7 +184,7 @@ def main():
         for line in lines[1:]:
             columns = line.split(',')
             if columns[2] not in ['unknown', 'error', '']:
-                solved_entries.append( (columns[0], columns[1]) )
+                solved_entries.append( (columns[0], int(columns[1])) )
     
     # Run unsolved entries (i.e., pairs of instance and seed)
     with ProcessPoolExecutor(max_workers=workers) as executor:
